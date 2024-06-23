@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    background-color: #e3f2eb;
+}
+.Main{
+    text-align: center;
+    margin-top: 200px;
+    
+}
+.tri{
+    font-family: sans-serif;
+    font: bold;
+    font-size: 135px;
+    margin: 22px -1px;
+    color: #2c3230;
+}
+.p1{
+    font-size: 20px;
+    font-family: sans-serif;
+    
+}
+.p2{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.p3{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.get{
+    margin-top: 22px;
+    padding: 10px 27px 10px 27px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    background-color: #253f34;
+    color: #e3f2eb;
+}
+.get:active{
+    background-color: #e3f2eb;
+    color: #2c3230;
+    font-size: 18px;
+}
+.a2{
+    text-decoration:none ;
+    color: #e3f2eb;
+}
+.a2:active{
+    color: #253f34;
+    background-color: #b9cfc4;
+}
+.con1{
+    margin-left: 20px;
+    margin-top: 70px;
+
+}
+.h1{
+    margin-left: 45px;
+}
+.main1{
+    display: flex;
+
+    
+}
+.f2{
+margin-left: 50px;
+margin-top: 70px;
+}
+.p5{
+    margin-top: 20px;
+    
+}
+.p6{
+    margin-top: 40px;
+}
+.in1{
+    background-color: #b9cfc4;
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+#t1{
+    background-color: #b9cfc4;
+    border: none;
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+
+}
+.drop{
+    padding-top: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+
+}
+.drop:hover{
+    background-color: #253f34;
+}
+
+.f1{
+    margin-top: 95px;
+    background-color: #b9cfc4;
+    width: 400px;
+    height: 320px;
+    border-radius: 5px;
+
+}
+
+.N,.in2{
+    margin-left: 15px;
+}
+
+.in2{
+ width: 365px;
+ height: 75px;
+ background-color: #b9cfc4;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-color: black;
+ border-style: light;
+}
+.btn1{
+    margin-left: 375px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px;
+    width: 400px;
+    background-color: #253f34;
+    color: #b9cfc4;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+.btn1:active{
+    background-color:#b9cfc4;
+    color: #2c3230;
+}
+.back{
+    margin-left: 25px;
+
+}
+.imgg{
+    width: 30px
+    ;
+}
