@@ -12,7 +12,7 @@ body{
     
 }
 .tri{
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
     font: bold;
     font-size: 135px;
     margin: 22px -1px;
@@ -20,16 +20,16 @@ body{
 }
 .p1{
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
     
 }
 .p2{
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
 }
 .p3{
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
 }
 .get{
     margin-top: 22px;
@@ -99,7 +99,7 @@ margin-top: 70px;
 .drop{
     padding-top: 10px;
     font-size: 17px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
 
 }
 .drop:hover{
@@ -137,7 +137,7 @@ margin-top: 70px;
     width: 400px;
     background-color: #253f34;
     color: #b9cfc4;
-    font-family: sans-serif;
+    font-family: 'Noto Sans';
     font-size: 20px;
     border-radius: 5px;
     border: none;
