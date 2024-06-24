@@ -38,7 +38,7 @@ def terzaghi(phi: float) -> dict[str, float]:
     denominator_g = 1 + (0.4 * np.sin(np.radians(4 * phi)))
     Ngamma = numerator_g / denominator_g
 
-    return {'Nc': Nc, 'Nq': Nq, 'Ngamma': Ngamma}
+    return {'Nc': np.round(Nc, 2), 'Nq': np.round(Nq, 2), 'Ngamma': np.round(Ngamma, 2)}
 
 
 def meyerhof(phi: float) -> dict[str, float]:
@@ -61,7 +61,7 @@ def meyerhof(phi: float) -> dict[str, float]:
     # Ngamma calculation
     Ngamma = (Nq - 1) * np.tan(np.radians(phi * 1.4))
 
-    return {'Nc': Nc, 'Nq': Nq, 'Ngamma': Ngamma}
+    return {'Nc': np.round(Nc, 2), 'Nq': np.round(Nq, 2), 'Ngamma': np.round(Ngamma, 2)}
 
 
 def vesic(phi: float) -> dict[str, float]:
@@ -84,7 +84,7 @@ def vesic(phi: float) -> dict[str, float]:
     # Ngamma calculation (different from Meyerhof and Hansen)
     Ngamma = 2 * (Nq + 1) * np.tan(np.radians(phi))
 
-    return {'Nc': Nc, 'Nq': Nq, 'Ngamma': Ngamma}
+    return {'Nc': np.round(Nc, 2), 'Nq': np.round(Nq, 2), 'Ngamma': np.round(Ngamma, 2)}
 
 
 def hansen(phi: float) -> dict[str, float]:
@@ -107,7 +107,7 @@ def hansen(phi: float) -> dict[str, float]:
     # Ngamma calculation (different from Meyerhof and Vesic)
     Ngamma = 1.5 * (Nq - 1) * np.tan(np.radians(phi))
 
-    return {'Nc': Nc, 'Nq': Nq, 'Ngamma': Ngamma}
+    return {'Nc': np.round(Nc, 2), 'Nq': np.round(Nq, 2), 'Ngamma': np.round(Ngamma, 2)}
 
 
 def EC7(phi: float) -> dict[str, float]:
@@ -130,4 +130,13 @@ def EC7(phi: float) -> dict[str, float]:
     # Ngamma calculation
     Ngamma = 2 * (Nq - 1) * np.tan(np.radians(phi))
 
-    return {'Nc': Nc, 'Nq': Nq, 'Ngamma': Ngamma}
+    return {'Nc': np.round(Nc, 2), 'Nq': np.round(Nq, 2), 'Ngamma': np.round(Ngamma, 2)}
+
+
+methods = {
+    "Terzaghi": terzaghi,
+    "Meyerhof": meyerhof, 
+    "Vesic": vesic,
+    "Hansen": hansen,
+    "EC7": EC7
+}
