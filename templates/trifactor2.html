@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trifactor.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='trifactor.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Javanese:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+
 
     <title>Calculate Bearing Capacity Factors</title>
 </head>
 <body class="bod1">
    <div class="back">
-    <a href="trifactor.html"><img src="BACK.png" alt="back" class="imgg"></a>
+    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='BACK.png') }}" alt="back" class="imgg"></a>
    </div>
     <div class="con1">
         <h1 class="h1">
@@ -17,47 +21,49 @@
         </h1>
        
         <div class="main1">
-            <form action="#" class="f2">
-                <P class="p4">
+            <form id="inputForm" action="{{ url_for('calculate') }}" method="POST" class="f2">
+                <p class="p4">
                     Supply soil data and choose your prefered method:
-                </P>
-                <p class="p5">
-                    Angle of internal friction(φ) in degrees(°):
                 </p>
-                <input type="text" class="in1">
+                <p class="p5">
+                    Angle of internal friction (φ) in degrees(°):
+                </p>
+                <input type="number" name="angle" class="in1" required>
                 <p class="p6">
                     Select your prefered method:
                 </p>
             <label for="" class="label">
-                <select name="Title1" id="t1">
-                    <option></option>    
+                <select name="method" id="t1" required>
+                    <option value=""></option>    
                     <option value="Terzaghi" class="drop">Terzaghi</option>
                     <option value="Meyerhof" class="drop">Meyerhof</option>
                     <option value="Vesic" class="drop">Vesic</option>
                     <option value="Hansen" class="drop">Hansen</option>
-                    <option value="Eurocode 7" class="drop">Eurocode 7 </option>
-                </select>
-                
+                    <option value="EC7" class="drop">Eurocode 7 </option>
+                </select>                
             </label>
             </form>
-            <form action="#" class="f1">
+            <form action=# class="f1">
                     <label for="Nc" class="N nc"> N<sub>c</sub></label>
                     <br>
-                    <input type="text" class="in2" disabled>
+                    <input type="text" class="in2" value="{% if results %}{{ results.Nc }}{% endif %}" disabled>
                     <br>
                     <label for="Nq" class="N">N<sub>q</sub></label>
                     <br>
-                    <input type="text" class="in2" disabled>
+                    <input type="text" class="in2" value="{% if results %}{{ results.Nq }}{% endif %}" disabled>
                     <br>
                     <label for="Ny" class="N">N<sub>&gamma;</sub></label>
                     <br>
-                    <input type="text" disabled class="in2">
+                    <input type="text" class="in2" value="{% if results %}{{ results.Ngamma }}{% endif %}" disabled>
                    </div>
-                   <button class="btn1">CALCULATE</button>
-                  
+                   <button type="button" class="btn1" onclick="submitInputForm()">CALCULATE</button>           
               </form> 
 
     </div>
-   
+    <script>
+        function submitInputForm() {
+            document.getElementById('inputForm').submit();
+        }
+    </script>   
 </body>
 </html>
