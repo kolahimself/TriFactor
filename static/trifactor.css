@@ -207,6 +207,8 @@ margin-top: 70px;
     .bod1{
      font-size: 18px;
      margin-right: 10px;
+        flex-direction: column;
+     align-items:center ;
     }
     .Main{
         margin-top: 200px;
