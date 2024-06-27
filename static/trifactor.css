@@ -203,13 +203,13 @@ margin-top: 70px;
 .imgg{
     width: 30px;
 }
-@media(max-width :500px){
+@media(max-width :399px){
     .bod1{
      font-size: 18px;
      margin-right: 10px;
     }
     .Main{
-        margin-top: 200px;
+        margin-top: 350px;
 
     }
     .h1{
@@ -238,15 +238,16 @@ margin-top: 70px;
         margin-left: 10px;
     }
     .in2{
-        width:330px;
+        width: 330px;
     }
     .f1{
-       width:350px;
+        
        margin-top: 10px; 
        margin-left: 20px;
+       width: 350px;
     }
     .btn1{
-        width:350px;
+        width: 350px;
         height: 50px;
         margin-left: 20px;
         margin-right: 30px;
@@ -254,7 +255,7 @@ margin-top: 70px;
     }
     .p4{
         margin-top: 10px;
-        width: max-content;
+        width: 330px;
         margin-left: 15px;
     }
     .p6{
