@@ -176,7 +176,7 @@ margin-top: 70px;
     padding: 1px;
 }
 .btn1{
-    margin-left: 442px;
+    margin-left: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 6px;
@@ -203,13 +203,16 @@ margin-top: 70px;
 .imgg{
     width: 30px;
 }
-@media(max-width :399px){
+@media(max-width :500px){
+    body{
+        margin: 0px;
+    }
     .bod1{
      font-size: 18px;
      margin-right: 10px;
     }
     .Main{
-        margin-top: 350px;
+        margin-top: 250px;
 
     }
     .h1{
@@ -279,6 +282,7 @@ margin-top: 70px;
     
     }
     .back{
+        margin-top: 5px;
         margin-left: 20px;
     }
 
