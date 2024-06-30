@@ -12,48 +12,37 @@ body{
     
 }
 .tri{
-    font-family: 'Noto Sans Javanese', sans-serif;
+    font-family: sans-serif;
     font: bold;
     font-size: 135px;
     margin: 22px -1px;
-    color: #2B332F;
-    text-shadow:
-        -0.5px -0.5px 0 #569878,
-        0.5px -0.5px 0 #569878,
-        -0.5px 0.5px 0 #569878,
-        0.5px 0.5px 0 #569878;
+    color: #2c3230;
 }
 .p1{
     font-size: 20px;
-    color: #2b322f;
-    font-family: 'Noto Sans Javanese', sans-serif;
+    font-family: sans-serif;
     
 }
 .p2{
     font-size: 20px;
-    color: #2b322f;
-    font-family: 'Noto Sans Javanese', sans-serif;
+    font-family: sans-serif;
 }
 .p3{
     font-size: 20px;
-    color: #2b322f;
-    font-family: 'Noto Sans Javanese', sans-serif;
+    font-family: sans-serif;
 }
 .get{
     margin-top: 22px;
-    padding: 10px 27px;
+    padding: 10px 27px 10px 27px;
     border-radius: 50px;
     border: none;
     font-size: 18px;
-    background-color: #2B322F;
+    background-color: #253f34;
     color: #e3f2eb;
-    font-family: 'Noto Sans Javanese', sans-serif;
-    position: relative; 
-    box-shadow: inset 0 0 0 1px #197A4B;
 }
 .get:active{
     background-color: #e3f2eb;
-    color: #2B322F;
+    color: #2c3230;
     font-size: 18px;
 }
 .a2{
@@ -65,23 +54,12 @@ body{
     background-color: #b9cfc4;
 }
 .con1{
-    margin-left: 0px;
+    margin-left: 20px;
     margin-top: 70px;
 
 }
 .h1{
     margin-left: 45px;
-    margin-top: -70px;
-    margin-bottom: -10px;
-    font-family: 'Noto Sans Javanese', sans-serif;
-    font-size: 42px;
-    font-weight: 700; 
-    color: #2b322f;
-    text-shadow:
-        -0.5px -0.5px 0 #569878,
-        0.5px -0.5px 0 #569878,
-        -0.5px 0.5px 0 #569878,
-        0.5px 0.5px 0 #569878;
 }
 .main1{
     display: flex;
@@ -92,55 +70,40 @@ body{
 margin-left: 50px;
 margin-top: 70px;
 }
-.p4 {
-    margin-top: -26px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #2b322f;
-}
 .p5{
     margin-top: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #2b322f;
+    
 }
 .p6{
     margin-top: 40px;
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #2b322f;
 }
 .in1{
     background-color: #b9cfc4;
-    color: #2b322f;
-    font-family: 'Noto Sans JP', sans-serif;
     border: none;
     width: 200px;
     height: 35px;
     margin-top: 5px;
     border-radius: 4px;
     padding-left: 5px;
-    position: relative; 
-    box-shadow: inset 0 0 0 0.2px #2B322F;
 }
 #t1{
     background-color: #b9cfc4;
-    color: #2b322f;
-    font-family: 'Noto Sans JP', sans-serif;
     border: none;
     width: 200px;
     height: 35px;
     margin-top: 5px;
     border-radius: 4px;
     padding-left: 10px;
-    position: relative; 
-    box-shadow: inset 0 0 0 0.2px #2B322F;
+
 }
 .drop{
     padding-top: 10px;
     font-size: 17px;
-    font-family: 'Noto Sans';
+    font-family: sans-serif;
 
 }
 .drop:hover{
-    background-color: #2B322F;
+    background-color: #253f34;
 }
 
 .f1{
@@ -149,46 +112,35 @@ margin-top: 70px;
     width: 400px;
     height: 320px;
     border-radius: 5px;
-    position: relative; 
-    box-shadow: inset 0 0 0 0.2px #2B322F;
-    margin-left: 30px;
+
 }
 
 .N,.in2{
     margin-left: 15px;
-    margin-bottom: 2.5px;
 }
 
 .in2{
  width: 365px;
-    height: 75px;
-    background-color: #b9cfc4;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-color: black;
-    border-style: light;
-    font-size: 30px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500; 
-    color: #2b322f;
-    text-align: left; 
-    padding: 1px;
+ height: 75px;
+ background-color: #b9cfc4;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ border-color: black;
+ border-style: light;
 }
 .btn1{
-    margin-left: 400px;
+    margin-left: 375px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 6px;
     width: 400px;
-    background-color: #2B322F;
+    background-color: #253f34;
     color: #b9cfc4;
     font-family: sans-serif;
     font-size: 20px;
     border-radius: 5px;
     border: none;
-    position: relative; 
-    box-shadow: inset 0 0 0 0.2px #197A4B;
 
 }
 .btn1:active{
@@ -196,94 +148,10 @@ margin-top: 70px;
     color: #2c3230;
 }
 .back{
-    margin-left: 15px;
-    margin-top: 40px;
+    margin-left: 25px;
 
 }
 .imgg{
-    width: 30px;
-}
-@media(max-width :500px){
-    body{
-        margin: 0px;
-    }
-    .bod1{
-     font-size: 18px;
-     margin-right: 10px;
-    }
-    .Main{
-        margin-top: 250px;
-
-    }
-    .h1{
-        margin-left: 17px;
-    }
-    .con1{
-        margin-top: 80px;
-        
-    }
-    .tri{
-        font-size: 67px;
-    }
-    .pp{
-        margin-right: 30px;
-    }
-    .get{
-        margin-top: 45px;
-    }
-    .main1{
-        display: block;
-    }
-    .in1{
-        width: 350px; 
-        height: 50px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-    }
-    .in2{
-        width: 330px;
-    }
-    .f1{
-        
-       margin-top: 10px; 
-       margin-left: 20px;
-       width: 350px;
-    }
-    .btn1{
-        width: 350px;
-        height: 50px;
-        margin-left: 20px;
-        margin-right: 30px;
-        margin-bottom: 1px;
-    }
-    .p4{
-        margin-top: 10px;
-        width: 330px;
-        margin-left: 15px;
-    }
-    .p6{
-        width: max-content;
-        margin-top: 10px;
-        margin-left: 15px;
-    }
-    .p5{
-        width: max-content;
-        margin-left: 15px;
-    }
-    .f2{
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-    #t1{
-        width: 350px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-        height: 50px;
-    
-    }
-    .back{
-        margin-top: 5px;
-        margin-left: 20px;
-    }
-
+    width: 30px
+    ;
 }
